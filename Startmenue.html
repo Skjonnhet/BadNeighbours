@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Nachbarschafts-Streit</title>
+		
+		<meta name="author" content="Nina Hösl, Jonas Jelinski">
+		<meta name="description" content="Nachbarschaftsstreit">
+	
+		
+    <link rel="StartmenueStyle" href="../css/StartmenueStyle.css">
+
+</head>
+<style title="test">
+body{
+  background-image: url("StartmenuePics/Hintergrund.jpg");
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	font-family: arial;
+	text-align: center;
+}
+h4{
+	font-size: 70px;
+	color: #FBF8EF;
+}
+
+p{
+	
+}
+#startButton, #beendenButton, #steuerungButton { 
+		margin-left: 40%;
+		font-size: 55px;
+		text-align: center;
+		color: #FBF8EF;
+		background-color: #58FAF4;
+		box-shadow: 5px 5px 3px #666;
+		border-radius:20px;
+		width: 420px;
+		height: 80px;
+		//display: flex;
+		//align-items: center;
+		//justify-content: center;
+    } 
+
+#startButton, #steuerungButton{
+	animation-name: comeInLeft;
+  animation-duration: 4s;
+}
+
+#beendenButton{
+	animation-name: comeInRight;
+  animation-duration: 6s;
+}
+
+@keyframes comeInLeft {
+    0%   {margin-left:-20%;}
+    100% {margin-left:40%;}
+}
+
+@keyframes comeInRight {
+    0%   {margin-left:100%;}
+    100% {margin-left:40%;}
+}
+</style>
+<script>
+	var button = document.getElementsById("startButton");
+
+ button.addEventListener('click', function (event) {
+     alert('Hi!');
+ });
+	
+	
+	
+	function myFunction() {
+    alert ("Hello World!");
+		}
+
+</script>
+<body>
+	<header>
+		<h4>Nachbarschaftsstreit</h4>
+	</header>
+	
+	<main>
+	<div class="button" id="startButton" onClick="myFunction">
+		<p>Spiel starten</p>
+	</div>
+	<div class="button" id="beendenButton">
+		<p>Beenden</p>
+	</div>
+	<div class="button" id="steuerungButton">
+		<p>Spielesteuerung</p>
+	</div>
+		<!-- <p>
+
+			<img id="startButton" src="StartmenuePics/StartButton.png" width="480" height="250" alt="Spiel starten" onclick="myFunction">
+		</p>
+		<p>
+			<img id="beendenButton" src="StartmenuePics/BeendenButton.png" width="480" height="250" alt="Spiel beenden">
+		</p>
+		<p>
+			<img id="steuerungButton" src="StartmenuePics/SteuerungButton.png" width="480" height="250" alt="Spielesteuerung">
+		</p>
+		-->
+
+	</main>
+	
+</body>
+</html>

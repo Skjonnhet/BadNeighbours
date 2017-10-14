@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <<meta charset="UTF-8">
+    <title>Nachbarschafts-Streit</title>
+		
+		<meta name="author" content="Nina Hösl, Jonas Jelinski">
+		<meta name="description" content="Nachbarschaftsstreit">
+
+</head>
+<style title="test">
+body{
+  background-image: url("SpielPics/häuser.png");
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+div{
+margin-top: 32%;
+}
+
+#redMan{
+	height: 250px;
+	width: 160px;
+	margin-left: 14%;
+	animation-name: comeInLeft;
+  animation-duration: 4s;
+	}
+	
+#blueMan{
+	height: 250px;
+	width: 160px;
+	margin-left: 50%; 
+	animation-name: comeInRight;
+  animation-duration: 4s;
+}
+
+#mauer{
+	margin-top: -22%;
+	margin-left: 40%;
+	height: 355px;
+	animation-name: comeInUp;
+	animation-duration: 4s;
+}
+
+@keyframes comeInLeft {
+  0%   {margin-left:-20%;}
+  100% {margin-left:14%;}
+}
+
+@keyframes comeInRight {
+  0%   {margin-left:100%;}
+  100% {margin-left:50%;}
+}
+
+@keyframes comeInUp {
+	0%		{margin-top: 80%}
+	100%	{margin-top: -20%}
+}
+
+</style>
+<script>
+
+
+</script>
+<body>
+	
+	<main>
+		
+	<div>
+		<img id="redMan" src="SpielPics/angry_red.png">
+		<img id="blueMan" src="SpielPics/angry_blue.png">
+		<img id="mauer" src="SpielPics/Mauer.png">
+	</div>	
+		
+	
+	
+	
+	
+	</main>
+	
+</body>
+</html>

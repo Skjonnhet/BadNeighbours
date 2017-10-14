@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Nachbarschafts-Streit</title>
+		
+		<meta name="author" content="Nina Hösl, Jonas Jelinski">
+		<meta name="description" content="Nachbarschaftsstreit">
+
+</head>
+<style title="test">
+body{
+  background-image: url("SpielPics/häuser.png");
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+				
+				
+					
+					overflow: hidden;   oder none
+}
+
+.static{
+	margin-top: 32%;
+}
+
+#redMan{
+	height: 250px;
+	width: 160px;
+	margin-left: 14%;
+	}
+	
+#blueMan{
+	height: 250px;
+	width: 160px;
+	margin-left: 50%; 
+}
+
+#arm{
+	position: absolute; 
+	margin-top: 2%;
+	margin-left: -71%;
+	height: 200px;
+	width: 200px;
+	animation-name: throw;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#banane{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	margin-left: -74%;
+	margin-top: 6%;
+	transform: rotate(-65deg);
+}
+
+#mauer{
+	position-absolute;
+	margin-top: -22%;
+	margin-left: 40%;
+	height: 355px;
+}
+
+
+@keyframes throw {
+	0%		{position: absolute; 
+				margin-top: 2%;
+				margin-left: -71%;
+				height: 200px;
+				width: 200px;}
+	40%	{position: absolute;
+				margin-top: 4.6%;
+				margin-left: -71.5%;
+				height: 200px;
+				width: 200px;
+				transform: scaleY(-1);}
+	100%		{position: absolute; 
+				margin-top: 2%;
+				margin-left: -71%;
+				height: 200px;
+				width: 200px;}
+}
+
+</style>
+<script>
+
+
+</script>
+<body>
+	
+	<main>
+	
+	
+	<div class="static">
+	
+		span
+		<img id="redMan" src="AnimationPics/angry_redoA.png">
+		
+		<img id="blueMan" src="SpielPics/angry_blue.png">
+		<img id="arm" src="AnimationPics/angry_redArm.png">
+		<img id="banane" src="AnimationPics/banane.png">
+		<img id="mauer" src="SpielPics/Mauer.png">
+
+		
+	</div>	
+		
+	<div class="mov">
+		
+	</div>
+		
+	
+	
+	
+	
+	</main>
+	
+</body>
+</html>

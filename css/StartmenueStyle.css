@@ -1,0 +1,12 @@
+html{
+    background-image: url("../StartmenuePics/Hintergrund.jpg");
+    background-size: cover;
+    background-color: fuchsia;
+}
+body{
+    color: aqua;
+}
+
+h1{
+	text-align: center; 
+}
